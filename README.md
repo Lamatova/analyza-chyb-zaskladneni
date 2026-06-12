@@ -12,6 +12,10 @@ Projekt byl vytvořen v rámci kurzu SQL a Power BI v roce 2024.
 - SQL
 - Power BI
 
+## Ukázka SQL kódu
+
+Vybrané SQL transformace použité při přípravě dat pro Power BI jsou uloženy ve složce **Ukázka kódu**.
+
 ## Dashboard
 
 ![Dashboard](dashboard.png.jpg)
