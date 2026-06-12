@@ -2,6 +2,10 @@
 
 Projekt zaměřený na analýzu chyb při zaskladňování a porovnání chybovosti s výkonem jednotlivých pracovníků.
 
+## Kontext projektu
+
+Projekt byl vytvořen v rámci kurzu SQL a Power BI v roce 2024.
+
 ## Použité technologie
 
 - MySQL Workbench
