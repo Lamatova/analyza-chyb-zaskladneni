@@ -9,14 +9,13 @@ Projekt byl vytvořen v rámci kurzu SQL a Power BI v roce 2024.
 ## Použité technologie
 
 - MySQL Workbench
-- SQL
 - Power BI
 
 ## Datový model
 
 Datový model použitý pro propojení skladových dat, informací o chybách zaskladnění a produktových informací.
 
-![Datový model](datovy_model.jpg)
+![Datový model](datovy_model_zaskladneni.jpg)
 
 ## Ukázka SQL kódu
 
