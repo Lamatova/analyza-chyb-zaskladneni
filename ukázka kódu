@@ -1,0 +1,50 @@
+CREATE TABLE chyby_zaskladneni_all
+ AS
+SELECT * 
+FROM lookup_chyby_v_zaskladneni_fy24
+UNION
+SELECT * 
+FROM lookup_chyby_v_zaskladneni
+
+SELECT 
+    a.userid AS userid,
+    a.`Typ Chyby` AS Typ_Chyby_24,
+    a.Pocet AS Pocet_FY24,
+    a.Datum AS Datum_FY24,
+    NULL AS Typ_Chyby_FY25,
+    NULL AS Pocet_FY25,
+    NULL AS Datum_FY25
+FROM 
+    lookup_chyby_v_zaskladneni_fy24 a
+
+UNION
+
+SELECT 
+    b.userid AS userid,
+    NULL AS Typ_Chyby_FY24,
+    NULL AS Pocet_FY24,
+    NULL AS Datum_FY24,
+    b.`Typ Chyby` AS Typ_Chyby_FY25,
+    b.Pocet AS Pocet_FY25,
+    b.Datum AS Datum_FY25
+FROM 
+    lookup_chyby_v_zaskladneni_fy25 b
+WHERE 
+    b.userid NOT IN (SELECT userid FROM lookup_chyby_v_zaskladneni_fy24)
+
+UNION
+
+SELECT 
+    a.userid AS userid,
+    a.`Typ Chyby` AS Typ_Chyby_FY24,
+    a.Pocet AS Pocet_FY24,
+    a.Datum AS Datum_FY24,
+    b.`Typ Chyby` AS Typ_Chyby_FY25,
+    b.Pocet AS Pocet_FY25,
+    b.Datum AS Datum_FY25
+FROM 
+    lookup_chyby_v_zaskladneni_fy24 a
+JOIN 
+    lookup_chyby_v_zaskladneni_fy25 b
+ON 
+    a.userid = b.userid;
