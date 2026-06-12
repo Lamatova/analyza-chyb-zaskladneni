@@ -12,6 +12,12 @@ Projekt byl vytvořen v rámci kurzu SQL a Power BI v roce 2024.
 - SQL
 - Power BI
 
+## Datový model
+
+Datový model použitý pro propojení skladových dat, informací o chybách zaskladnění a produktových informací.
+
+![Datový model](datovy_model.jpg)
+
 ## Ukázka SQL kódu
 
 Vybrané SQL transformace použité při přípravě dat pro Power BI jsou uloženy ve složce **Ukázka kódu**.
