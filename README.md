@@ -10,7 +10,7 @@ Projekt zaměřený na analýzu chyb při zaskladňování a porovnání chybovo
 
 ## Dashboard
 
-![Dashboard](dashboard.png)
+![Dashboard](dashboard.png.jpg)
 
 ## Moje role
 
