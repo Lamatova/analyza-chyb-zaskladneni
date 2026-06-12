@@ -1,6 +1,6 @@
- O projektu
+O projektu
 
-Projekt zaměřený na analýzu chyb při zaskladňování a porovnání chybovosti s výkonem jednotlivých pracovníků.
+Analýza chyb při zaskladňování a jejich vztahu k výkonu pracovníků pomocí SQL, MySQL Workbench a Power BI.
 
 ## Kontext projektu
 
